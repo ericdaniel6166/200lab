@@ -3,3 +3,7 @@
 DDD
 Domain Driven Design
 
+blog
+video (youtube)
+ebook
+whitepaper
