@@ -1,7 +1,6 @@
 #ask
 
-telegram group nhu lop golang
+slide share
 
-slide
-
-SA resources anh hay dung, web, blog, telegram group, facebook group
+character architecture
+interoperability

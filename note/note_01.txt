@@ -1,0 +1,25 @@
+#note
+
+SA mindset
+OOAD: OOP, SOLID, Design Patterns with UML - Low & High
+System Design - Main Components
+Microservices
+Domain Driven Design (What, Why, How)
+
+#1
+SA
+
+--------------------------------------------------------
+
+DDD
+Domain Driven Design
+
+blog
+video (youtube)
+ebook
+whitepaper
+
+
+#no_code
+directus
+strapi
