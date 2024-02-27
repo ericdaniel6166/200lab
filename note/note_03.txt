@@ -1,0 +1,53 @@
+#note
+
+SRS
+system requirement
+
+BRD
+
+FRS
+
+FR and NFR
+---
+the CAP theorem
+https://www.linkedin.com/advice/0/how-do-you-balance-trade-offs-between-17f
+https://medium.com/@techWithAditya/a-deep-dive-into-the-trade-offs-of-the-cap-theorem-and-their-practical-implications-for-distributed-6021694ad258
+---
+
+    Chuc nang dem lai doanh thu
+    Chuc nang nao la chuc nang dinh nghia san pham, giai quyet nhu cau cua nguoi dung
+        phat trien nguoi dung
+    Chuc nang nao se cat giam dc chi phi neu co
+
+---
+
+trip deal web & mobile apps
+
+Core domain
+    ex:
+        trip deal, trip offer, payment
+        shopping cart, order, shipping (e-commerce)
+supporting domain
+    user identity & permission
+        open source
+        some customize
+generic domain
+    notification, email marketing
+        paid solution
+
+---
+user story (WHO? WHAT? WHY?)
+    as a/an {{actor }}, I should be able to {{action}} [then...]
+    ex:
+        as a customer, I should be able to make payment for my current trip deal, then
+        as a tour guide I should be ...
+        ***as a notification system, I should be able to send email automatically to tour guide when customer's deals are created
+
+
+https://www.figma.com/file/Eo1SuSV4AHQPr1yD0uQ4SV/Food-Delivery-UI-Kit?type=design&node-id=162%3A1026&mode=design&t=p9Gw7NDjhXLh5BWn-1
+
+-> FRs, NFRs
+---
+DAU
+MAU
+User retention
