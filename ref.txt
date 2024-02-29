@@ -1,4 +1,0 @@
-#ref
-
-#DDD
-resource/DDD.jpg
