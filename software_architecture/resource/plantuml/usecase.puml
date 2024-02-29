@@ -1,0 +1,111 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:Main Admin: as Admin
+(Use the application) as (Use)
+
+User -> (Start)
+User --> (Use)
+
+Admin ---> (Use)
+
+note right of Admin : This is an example.
+
+note right of (Use)
+A note can also
+be on several lines
+end note
+
+note "This note is connected\nto several objects." as N2
+(Start) .. N2
+N2 .. (Use)
+@enduml
+--------------------------------------------------------------------------
+@startuml
+left to right direction
+actor "Food Critic" as fc
+rectangle Restaurant {
+  usecase "Eat Food" as UC1
+  usecase "Pay for Food" as UC2
+  usecase "Drink" as UC3
+}
+fc --> UC1
+fc --> UC2
+fc --> UC3
+@enduml
+--------------------------------------------------------------------------
+#association --
+#generalization #extension <|--
+#include UC2<..UC3 :<<include>>
+#extend UC3<..UC4 :<<extend>>
+
+@startuml
+
+:Main Admin: as Admin
+(Use the application) as (Use)
+
+rectangle Eric_System {
+  usecase "Use Case 1" as UC1
+  usecase "Use Case 2" as UC2
+  usecase "Use Case 3" as UC3
+  usecase "Use Case 4" as UC4
+}
+
+User <|-- Admin
+(Start) <|-- (Use)
+
+Admin--UC1
+UC1<|--UC2
+UC2<..UC3 :<<include>>
+UC3<..UC4 :<<extend>>
+
+@enduml
+
+--------------------------------------------------------------------------
+#https://app.diagrams.net/
+
+@startuml
+left to right direction
+:<<system>> \n notification: as notif
+:customer: as c
+:barista: as b
+:staff: as s
+rectangle "coffee shop system" {
+    usecase "order coffee" as order_coffee
+    usecase "order cake" as order_cake
+    usecase "view catalog" as view_catalog
+    usecase "pay/checkout" as pay
+    usecase "make coffee" as make_coffee
+    usecase "pay with cash" as pay_cash
+    usecase "pay with e-wallet" as pay_e_wallet
+    usecase "view invoice" as view_invoice
+    usecase "send invoice" as send_invoice
+
+}
+c---order_coffee
+c--view_catalog
+order_coffee ..>view_catalog:<<include>>
+order_coffee <... make_coffee:<<include>>
+make_coffee--b
+b--|>s
+
+c-r-view_invoice
+
+view_invoice ...>send_invoice:<<include>>
+
+c-r-pay
+
+pay<|--pay_cash
+pay<|--pay_e_wallet
+send_invoice--notif
+order_coffee <.pay:<<include>>
+order_coffee <..order_cake:<<extend>>
+
+@enduml
+
+
+
+
+
+
+
