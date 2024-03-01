@@ -101,6 +101,33 @@ send_invoice--notif
 order_coffee <.pay:<<include>>
 order_coffee <..order_cake:<<extend>>
 
+@startuml
+
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Member" as member
+actor "Bookstore System" as system
+
+rectangle "User Journey: Rent Book" {
+    usecase "Access System\n- Visit website/app\n- Log in" as access_system
+    usecase "Browse Books\n- View by genre\n- View by author\n- View by popularity" as browse_books
+    usecase "Select Book\n- View details\n- Choose book" as select_book
+    usecase "Rent Book\n- Specify rental period\n- Confirm transaction" as rent_book
+    usecase "Payment\n- Choose payment method\n- Enter payment details" as payment
+    usecase "Book Pickup/Delivery\n- Provide pickup/delivery details" as pickup_delivery
+    usecase "Return Book\n- Visit store\n- Arrange pickup" as return_book
+
+    member -- access_system
+    member -- rent_book
+    access_system -- browse_books
+    browse_books -- select_book
+    select_book -- rent_book
+    rent_book -- payment
+    payment -- pickup_delivery
+    enjoy_book -- return_book
+}
+
 @enduml
 
 

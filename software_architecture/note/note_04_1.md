@@ -25,3 +25,20 @@ redundant use case
     log in/log out
 
 https://github.com/200lab-Education/sa-design-system-course/blob/master/problem/web_looker_tiny_url.md
+
+---
+Lucy Book Store
+
+entity
+    book
+    customer
+        uuid
+        name
+        phone
+    book metadata
+
+actor
+    customer
+uc
+    rent book 
+    view book catalog 
