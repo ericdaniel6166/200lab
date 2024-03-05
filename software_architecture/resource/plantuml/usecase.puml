@@ -100,6 +100,7 @@ pay<|--pay_e_wallet
 send_invoice--notif
 order_coffee <.pay:<<include>>
 order_coffee <..order_cake:<<extend>>
+@enduml
 
 @startuml
 
