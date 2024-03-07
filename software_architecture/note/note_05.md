@@ -39,12 +39,18 @@ open closed principle
 
 L
 liskov substitution principle
+objects in a procam should be replaceable
+u.)i+h instances oc their subtypes without alter-ins
+the correctness of that proem.
 
 I
 interface segregation principle
 
 D
-dependency injection principle
+dependency inversion principle
+
+-----
+compare abstraction and interface
 
 
 
