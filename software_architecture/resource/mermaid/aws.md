@@ -16,6 +16,11 @@ flowchart LR;
 
 ```mermaid
 flowchart LR;
+ 
+```
+
+```mermaid
+flowchart LR;
     customer <--> dns[Route 53 \n dns query for eric-app.com \n Alias Record];
 
     dns <--> cdn[CloudFront];
