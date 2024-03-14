@@ -119,10 +119,10 @@ failure. If there is a temporary CDN outage, clients should be able to detect th
 and request resources from the origin.
 • Invalidating files: You can remove a file from the CDN before it expires by performing
 one of the following operations:
-• Invalidate the CDN object using APIs provided by CDN vendors.
-• Use object versioning to serve a different version of the object. To version an object,
-you can add a parameter to the URL, such as a version number. For example, version
-number 2 is added to the query string: image.png?v=2.
+    • Invalidate the CDN object using APIs provided by CDN vendors.
+    • Use object versioning to serve a different version of the object. To version an object,
+    you can add a parameter to the URL, such as a version number. For example, version
+    number 2 is added to the query string: image.png?v=2.
 ---
 ---
 ------
