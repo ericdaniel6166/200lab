@@ -1,0 +1,3 @@
+Strategy
+is a behavioral design pattern
+that define a family of algorithms,
