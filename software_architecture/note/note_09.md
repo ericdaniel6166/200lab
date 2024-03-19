@@ -1,9 +1,9 @@
 #note
 
-decorator
+decorator (wrapper)
 ex: 
 - root error
-  - root cause error, warping
+  - root cause error, wrap
   - throw friendly error
   - show log root cause error in dev env
   - throw friendly error in stg/prd env
@@ -16,7 +16,7 @@ ex:
 - relationship between users in social network
 - category - sub category - item 
 
-Chain of Responsibility (CoR)
+Chain of Responsibility (CoR, Chain of Command)
 ex:
 - Backup DB (PostgreSQL, MongoDB, etc)
   - backup (library, CLI)
