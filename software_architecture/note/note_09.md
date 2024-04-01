@@ -18,12 +18,14 @@ ex:
 
 Chain of Responsibility (CoR, Chain of Command)
 ex:
-- Backup DB (PostgreSQL, MongoDB, etc)
-  - backup (library, CLI)
-  - zip (library, CLI)
-  - upload (AWS S3)
+
 - middleware
   - handler
     - context
   - filter
 - OncePerRequestFilter
+- 
+- Backup DB (PostgreSQL, MongoDB, etc)
+  - backup (library, CLI)
+  - zip (library, CLI)
+  - upload (AWS S3)
